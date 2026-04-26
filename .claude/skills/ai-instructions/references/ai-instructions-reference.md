@@ -43,7 +43,7 @@ aiInstructions: {
 | `generateStory` | `Character Behavior`, `Style Principles`, `custom` |
 | `generateInitialStart` | `Opening Structure`, `Style Principles`, `custom` |
 | `generateActionInfo` | `custom` |
-| `generateCharacterBackground` | `character_profile_generator`, `character_profile_background`, `character_profile_appearance`, `do_not_include`, `style`, `structure`, `context`, `final_notes`, `custom` |
+| `generateCharacterBackground` | `prompt`, `custom` |
 | `generateNPCDetails` | `custom` |
 | `generateLocationDetails` | `custom` |
 | `generateRegionDetails` | `custom` |
@@ -81,19 +81,12 @@ Assesses action difficulty and determines skill checks.
 
 ### generateCharacterBackground
 
-Generates character backstory and appearance during character creation. Undefined keys fall back to built-in defaults. Set a key to `" "` (single space) to disable a default without replacing it.
+Generates character backstory and appearance during character creation. An undefined `prompt` falls back to the built-in default. Set `prompt` to `" "` (single space) to disable the default without replacing it.
 
 | Key | Purpose |
 |-----|---------|
-| `character_profile_generator` | Overall character profile generation guidance |
-| `character_profile_background` | Background/history generation (3-4 sentences) |
-| `character_profile_appearance` | Physical appearance generation (2 sentences) |
-| `do_not_include` | Things to exclude from profiles |
-| `style` | Writing style for profiles |
-| `structure` | Output structure requirements |
-| `context` | How to use world/character context |
-| `final_notes` | Final guidance notes |
-| `custom` | World-specific additions |
+| `prompt` | The full character profile generator prompt — covers overall guidance, background, appearance, style, structure, context use, and any final notes in one block. Replaces the built-in default when set. |
+| `custom` | World-specific additions (appended after `prompt`) |
 
 ### generateNPCDetails
 

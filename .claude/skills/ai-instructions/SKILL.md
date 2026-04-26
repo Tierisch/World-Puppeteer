@@ -39,14 +39,7 @@ Edit `tabs/ai-instructions.json`.
     },
     "generateActionInfo": { "custom": "..." },
     "generateCharacterBackground": {
-      "character_profile_generator": "...",
-      "character_profile_background": "...",
-      "character_profile_appearance": "...",
-      "do_not_include": "...",
-      "style": "...",
-      "structure": "...",
-      "context": "...",
-      "final_notes": "...",
+      "prompt": "...",
       "custom": "..."
     },
     "generateNPCDetails": { "custom": "..." },
@@ -69,7 +62,7 @@ Edit `tabs/ai-instructions.json`.
 | `generateStory` | `Character Behavior`, `Style Principles`, `custom` |
 | `generateInitialStart` | `Opening Structure`, `Style Principles`, `custom` |
 | `generateActionInfo` | `custom` |
-| `generateCharacterBackground` | `character_profile_generator`, `character_profile_background`, `character_profile_appearance`, `do_not_include`, `style`, `structure`, `context`, `final_notes`, `custom` |
+| `generateCharacterBackground` | `prompt`, `custom` |
 | `generateNPCDetails` | `custom` |
 | `generateLocationDetails` | `custom` |
 | `generateRegionDetails` | `custom` |
@@ -79,7 +72,7 @@ Edit `tabs/ai-instructions.json`.
 | `generateNewNPC` | `custom` |
 | `ItemGenerationAndUsage` | `custom` |
 
-Add any key to any task to append additional guidance. For `generateCharacterBackground`, undefined keys fall back to built-in defaults. Set a key to `" "` (single space) to disable a default without replacing it.
+Add any key to any task to append additional guidance. For `generateCharacterBackground`, an undefined `prompt` falls back to the built-in default. Set `prompt` to `" "` (single space) to disable the default without replacing it.
 
 ## generateActionInfo
 

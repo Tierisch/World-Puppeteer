@@ -17,14 +17,7 @@
       "custom": ""
     },
     "generateCharacterBackground": {
-      "character_profile_generator": "",
-      "character_profile_background": "",
-      "character_profile_appearance": "",
-      "do_not_include": "",
-      "style": "",
-      "structure": "",
-      "context": "",
-      "final_notes": "",
+      "prompt": "",
       "custom": ""
     },
     "generateNPCDetails": {
