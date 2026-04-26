@@ -23,7 +23,7 @@ brew install node
 winget install OpenJS.NodeJS.LTS
 ```
 
-Or download directly from [nodejs.org](https://nodejs.org/) (LTS version).
+Or download directly from [nodejs.org](https://nodejs.org/en/download) (LTS version).
 
 Verify it installed:
 ```bash
